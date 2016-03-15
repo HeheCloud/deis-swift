@@ -8,9 +8,9 @@ Please add any [issues](https://github.com/HeheCloud/deis-swift/issues) you find
 
 ```
 $ docker build -t hehecloud/deis-swift .
-$ docker run --name deis-swift-data -v /srv alpine:3.2
+$ docker run --name deis-swift-data -v /srv alpine:3.2 /bin/true
 $ docker run --name deis-swift \
-  --rm \
+  --rm -it \
   --hostname deis-swift \
   -e "SWIFT_USER_PASSWORD=123456" \
   -p 8888:8080 \
