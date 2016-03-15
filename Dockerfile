@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM daocloud.io/library/ubuntu:14.04
 MAINTAINER Cloud Mario <smcz@qq.com>
 
 RUN apt-get update
